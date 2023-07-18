@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Counter {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
 
     private int counter;
